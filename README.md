@@ -92,9 +92,10 @@ npm run dev
 
 ## 🌐 Project Links
 
-- **Demo (Netlify):** [View the App](https://mo-weather-react.netlify.app)
-
-- **Repo (GitHub):** [View the Code](https://github.com/Mohamedsayed101/MO-Weather-React)
+## ✨ Deployment
+You can deploy the template easily using:
+- [GitHub Pages](https://mohamedsayed101.github.io/MO-Weather-React/)  
+- [Netlify](https://weatherproject1231.netlify.app/)  
 
 ---
 
