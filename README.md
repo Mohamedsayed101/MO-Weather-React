@@ -57,12 +57,17 @@ This app allows users to:
 - **API**:
   - WeatherAPI (API calls separated into a dedicated file)
 - **Deployment**:
-  - Netlify
+  - vercel
 - **Version Control**:
   - Git + GitHub
 
 ---
+## Planing for Project
 
+- **Planing Diagram**
+  ![Planning Image](public/preview/Planing.png)
+
+---
 
 ## 🚀 Installation & Setup
 
@@ -95,26 +100,26 @@ npm run dev
 ## ✨ Deployment
 You can deploy the template easily using:
 - [GitHub Pages](https://mohamedsayed101.github.io/MO-Weather-React/)  
-- [Netlify](https://weatherproject1231.netlify.app/)  
+- [vercel](https://mo-weather-react.vercel.app/)  
 
 ---
 
 ## 📸 Screenshots
 
 - **Home Page**
-  ![Home Page](public/preview/home.png)
+  ![Home Page](public/preview/Home.png)
 
 - **News Page**
-  ![News Page](public/preview/news.png)
+  ![News Page](public/preview/News.png)
 
 - **Live Cameras Page**
-  ![Live Cameras](public/preview/live.png)
+  ![Live Cameras](public/preview/Live-cameras.png)
 
 - **Photos Page**
-  ![Photos Page](public/preview/photos.png)
+  ![Photos Page](public/preview/Photos.png)
 
 - **Contact Page**
-  ![Contact Page](public/preview/contact.png)
+  ![Contact Page](public/preview/Contact.png)
 
 - **Not Found (404) Page**
   ![404 Page](public/preview/404.png)
