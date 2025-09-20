@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.Card {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+  padding: 10px 40px !important;
+  backdrop-filter: blur(5px) !important;
+}
