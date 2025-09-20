@@ -63,9 +63,57 @@ This app allows users to:
 
 ---
 
-## 🚀 Running Locally
 
-1. Clone the repository:
+## 🚀 Installation & Setup
+
+Clone the repo and run the app locally:
+
 ```bash
+# Clone repo
 git clone https://github.com/Mohamedsayed101/MO-Weather-React.git
+```
 
+```bash
+# Navigate to project folder
+cd MO-Weather-React
+```
+
+```bash
+# Install dependencies
+npm install
+```
+
+```bash
+# Start development server
+npm run dev
+```
+
+---
+
+## 🌐 Project Links
+
+- **Demo (Netlify):** [View the App](https://mo-weather-react.netlify.app)
+
+- **Repo (GitHub):** [View the Code](https://github.com/Mohamedsayed101/MO-Weather-React)
+
+---
+
+## 📸 Screenshots
+
+- **Home Page**
+  ![Home Page](public/preview/home.png)
+
+- **News Page**
+  ![News Page](public/preview/news.png)
+
+- **Live Cameras Page**
+  ![Live Cameras](public/preview/live.png)
+
+- **Photos Page**
+  ![Photos Page](public/preview/photos.png)
+
+- **Contact Page**
+  ![Contact Page](public/preview/contact.png)
+
+- **Not Found (404) Page**
+  ![404 Page](public/preview/404.png)
