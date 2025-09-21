@@ -78,8 +78,9 @@ Clone the repo and run the app locally:
 git clone https://github.com/Mohamedsayed101/MO-Weather-React.git
 ```
 
+##### Navigate to project folder
+
 ```bash
-# Navigate to project folder
 cd MO-Weather-React
 ```
 
@@ -107,19 +108,36 @@ You can deploy the template easily using:
 ## 📸 Screenshots
 
 - **Home Page**
+
   ![Home Page](public/preview/Home.png)
 
+
 - **News Page**
+
   ![News Page](public/preview/News.png)
 
+
 - **Live Cameras Page**
+
   ![Live Cameras](public/preview/Live-cameras.png)
 
+
 - **Photos Page**
+
   ![Photos Page](public/preview/Photos.png)
 
+
 - **Contact Page**
+
   ![Contact Page](public/preview/Contact.png)
 
+
 - **Not Found (404) Page**
-  ![404 Page](public/preview/404.png)
+
+  ![404 Page](public/preview/NotFound.png)
+
+---
+
+## 📧 Contact
+Created with ❤️ by **[Mohamed Sayed]**  
+Feel free to fork, customize, and share this template!
