@@ -65,7 +65,7 @@ This app allows users to:
 ## Planing for Project
 
 - **Planing Diagram**
-  ![Planning Image](./public/preview/Planing.png)
+  ![Planning Image](./public/Preview/Planing.png)
 
 ---
 
@@ -112,32 +112,32 @@ You can deploy the template easily using:
 
 - **Home Page**
 
-  ![Home Page](./public/preview/Home.png)
+  ![Home Page](./public/Preview/Home.png)
 
 
 - **News Page**
 
-  ![News Page](./public/preview/News.png)
+  ![News Page](./public/Preview/News.png)
 
 
 - **Live Cameras Page**
 
-  ![Live Cameras](./public/preview/Live-cameras.png)
+  ![Live Cameras](./public/Preview/Live-cameras.png)
 
 
 - **Photos Page**
 
-  ![Photos Page](./public/preview/Photos.png)
+  ![Photos Page](./public/Preview/Photos.png)
 
 
 - **Contact Page**
 
-  ![Contact Page](./public/preview/Contact.png)
+  ![Contact Page](./public/Preview/Contact.png)
 
 
 - **Not Found (404) Page**
 
-  ![404 Page](./public/preview/NotFound.png)
+  ![404 Page](./public/Preview/NotFound.png)
 
 ---
 
