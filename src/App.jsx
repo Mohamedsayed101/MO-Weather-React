@@ -15,19 +15,24 @@ import NotFound from "./Pages/NotFound/NotFound";
 // Routing
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// Loader Wrapper
+import RouteWrapper from "./Utils/RouteWrapper/RouteWrapper";
+
 function App() {
   return (
     <Router>
       <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/live-cameras" element={<LiveCameras />} />
-          <Route path="/photos" element={<Photos />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <RouteWrapper>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/live-cameras" element={<LiveCameras />} />
+            <Route path="/photos" element={<Photos />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </RouteWrapper>
       </MainLayout>
     </Router>
   );

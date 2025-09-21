@@ -11,6 +11,7 @@ import { getWeather } from "../../Services/WeatherApi/WeatherApi";
 import { useWeather } from "../../Contexts/WeatherContext";
 
 import Loader from "../../Components/Loader/Loader";
+import moment from "moment/moment";
 
 // import { Title, Meta, Link } from "react-head";
 
@@ -21,15 +22,15 @@ export default function Home() {
 
   const { cityInput, setCityInput, weather, setWeather } = useWeather();
 
-  const weekDays = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  // const weekDays = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thursday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
 
   const handleFocus = () => {
     if (inputRef.current) {
@@ -123,20 +124,19 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-6  pb-20 -mt-15 ">
             {weather ? (
               weather.forecast.forecastday.map((day, index) => {
-                const dateObj = new Date(day.date);
-                const dayName = weekDays[dateObj.getDay()];
+                const dayName = moment(day.date).format("dddd");
+                const currentHour = parseInt(moment().format("H"), 10);
+                const currentHourData = day.hour[currentHour] || day.hour[0];
 
                 return (
                   <BasicCard
                     key={index}
                     city={index === 0 ? weather.location.name : dayName}
-                    date={index === 0 ? `${dayName}, ${day.date}` : day.date}
-                    temp={
-                      index === 0 ? weather.current.temp_c : day.day.avgtemp_c
-                    }
-                    condition={day.day.condition.text}
-                    icon={day.day.condition.icon}
-                    wind={day.day.maxwind_kph}
+                    date={`${dayName}, ${day.date}`}
+                    temp={currentHourData.temp_c}
+                    condition={currentHourData.condition.text}
+                    icon={currentHourData.condition.icon}
+                    wind={currentHourData.wind_kph}
                   />
                 );
               })
