@@ -65,7 +65,7 @@ This app allows users to:
 ## Planing for Project
 
 - **Planing Diagram**
-  ![Planning Image](public/preview/Planing.png)
+  ![Planning Image](./public/preview/Planing.png)
 
 ---
 
@@ -73,8 +73,9 @@ This app allows users to:
 
 Clone the repo and run the app locally:
 
+##### Clone repo
+
 ```bash
-# Clone repo
 git clone https://github.com/Mohamedsayed101/MO-Weather-React.git
 ```
 
@@ -84,13 +85,15 @@ git clone https://github.com/Mohamedsayed101/MO-Weather-React.git
 cd MO-Weather-React
 ```
 
+##### Install dependencies
+
 ```bash
-# Install dependencies
 npm install
 ```
 
+##### Start development server
+
 ```bash
-# Start development server
 npm run dev
 ```
 
@@ -109,32 +112,42 @@ You can deploy the template easily using:
 
 - **Home Page**
 
-  ![Home Page](public/preview/Home.png)
+  ![Home Page](./public/preview/Home.png)
 
 
 - **News Page**
 
-  ![News Page](public/preview/News.png)
+  ![News Page](./public/preview/News.png)
 
 
 - **Live Cameras Page**
 
-  ![Live Cameras](public/preview/Live-cameras.png)
+  ![Live Cameras](./public/preview/Live-cameras.png)
 
 
 - **Photos Page**
 
-  ![Photos Page](public/preview/Photos.png)
+  ![Photos Page](./public/preview/Photos.png)
 
 
 - **Contact Page**
 
-  ![Contact Page](public/preview/Contact.png)
+  ![Contact Page](./public/preview/Contact.png)
 
 
 - **Not Found (404) Page**
 
-  ![404 Page](public/preview/NotFound.png)
+  ![404 Page](./public/preview/NotFound.png)
+
+---
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to **Engineer Yarab from Tarmmez Academy** for the excellent effort in explaining concepts, breaking down problems, and guiding us step by step. May Allah reward him greatly.  
+
+And we ask Allah, the Most Merciful, to support and ease the suffering of our brothers and sisters in **Gaza** – to feed the hungry, give drink to the thirsty, and grant them relief and victory. ❤️
 
 ---
 
