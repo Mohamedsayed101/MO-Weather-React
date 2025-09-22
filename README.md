@@ -42,6 +42,7 @@ This app allows users to:
 - Additional pages: news, photos, live cameras, contact form.
 - Centralized weather and city state management using **Context API**.
 - Modern and responsive design with **Tailwind CSS** and **Material UI**.
+- using redux library in case more scale for project and it's very amazing tool to management State in case bigger product
 
 ---
 
@@ -54,6 +55,7 @@ This app allows users to:
   - React Router (NavLink)
   - Context API
   - React Hooks: useState, useEffect, useContext, useRef
+  - Redux : Redux , Redux toolKit , Redux dev tool ,middleWare , Thunk Function
 - **API**:
   - WeatherAPI (API calls separated into a dedicated file)
 - **Deployment**:
