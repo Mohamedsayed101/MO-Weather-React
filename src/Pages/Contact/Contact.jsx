@@ -1,68 +1,77 @@
+import { Container, TextField, Button, Typography, Paper, Box } from "@mui/material";
 import { useState } from "react";
-import {
-  Container,
-  Box,
-  TextField,
-  Button,
-  Typography,
-  Paper,
-} from "@mui/material";
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent successfully!");
-    setForm({ name: "", email: "", message: "" });
+    console.log("📩 Form Submitted:", formData);
+
+    // reset after submit
+    setFormData({ name: "", email: "", message: "" });
+    alert("✅ Thanks for contacting us!");
   };
 
   return (
-    <Container maxWidth="sm" sx={{ py: 6 }}>
-      <Paper elevation={3} sx={{ p: 4, borderRadius: 3 }}>
-        <Typography variant="h4" component="h1" align="center" gutterBottom>
+    <Container maxWidth="md" className="py-10">
+      <Paper elevation={3} className="p-8 rounded-2xl shadow-lg">
+        <Typography variant="h4" className="mb-6 text-center font-bold text-blue-600">
           Contact Us
         </Typography>
-        <Box
-          component="form"
-          onSubmit={handleSubmit}
-          sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-        >
-          <TextField
-            label="Your Name"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            required
-            fullWidth
-          />
-          <TextField
-            label="Your Email"
-            name="email"
-            type="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-            fullWidth
-          />
-          <TextField
-            label="Your Message"
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            required
-            fullWidth
-            multiline
-            rows={5}
-          />
-          <Button type="submit" variant="contained" size="large">
-            Send Message
-          </Button>
-        </Box>
+
+        <form onSubmit={handleSubmit}>
+          <Box className="flex flex-col gap-5">
+            <TextField
+              fullWidth
+              label="Your Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+
+            <TextField
+              fullWidth
+              type="email"
+              label="Your Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+
+            <TextField
+              fullWidth
+              label="Your Message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              multiline
+              rows={4}
+              required
+            />
+
+            <Button
+              type="submit"
+              variant="contained"
+              size="large"
+              sx={{ borderRadius: "12px" }}
+              className="bg-blue-600 hover:bg-blue-700"
+            >
+              Send Message
+            </Button>
+          </Box>
+        </form>
       </Paper>
     </Container>
   );
